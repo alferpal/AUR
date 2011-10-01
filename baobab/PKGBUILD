@@ -1,10 +1,10 @@
-# Mantainer: Alex Ferrando <alferpal at gmail dot com>
+# Maintainer: Alex Ferrando <alferpal at gmail dot com>
 # Contributor: Nathan Owe <ndowens.aur at gmail dot com>
 # Contributor: Gary Wright <wriggary@gmail.com>
 # Contributor: Jonathan Tellier <jonathan.tellier@gmail.com>
 pkgname=baobab
-pkgver=3.0.1
-pkgrel=2
+pkgver=3.0.2
+pkgrel=1
 pkgdesc="A C/gtk+ application to analyse disk usage in any Gnome environment."
 arch=('i686' 'x86_64')
 url="http://www.marzocca.net/linux/baobab.html"
