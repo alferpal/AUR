@@ -3,7 +3,7 @@
 # Contributor: Gary Wright <wriggary@gmail.com>
 # Contributor: Jonathan Tellier <jonathan.tellier@gmail.com>
 pkgname=baobab
-pkgver=3.0.2
+pkgver=3.2.0
 pkgrel=1
 pkgdesc="A C/gtk+ application to analyse disk usage in any Gnome environment."
 arch=('i686' 'x86_64')
