@@ -12,7 +12,7 @@ arch=('i686' 'x86_64')
 url="http://code.google.com/p/firetray/"
 license=('GPL')
 depends=('thunderbird>=3.1')
-makedepends=('xulrunner>=1.9.2' 'scons' 'svn' 'unzip')
+makedepends=('xulrunner' 'scons' 'svn' 'unzip')
 provides=('thunderbird-firetray')
 conflicts=('thunderbird-firetray')
 source=('generate_install_rdf.sh.patch')
