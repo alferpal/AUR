@@ -19,8 +19,7 @@ source=('generate_install_rdf.sh.patch'
         'SConscript.patch')
 
 md5sums=('bfd81f3339cf88b811b910b0aed27d5c'
-         '06464e5b04559be408facc2f569a4fc1')
-
+         'c05a05cef976f286d76a48ac92294b9e')
 
 _svntrunk=http://firetray.googlecode.com/svn/trunk/
 _svnmod=firetray
