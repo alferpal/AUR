@@ -26,8 +26,8 @@
 -bhdr = Builder(action = 'xpidl -w -m header -Icomponents -I' + gecko_idl + ' -e $TARGET $SOURCE', suffix = '.h', src_suffix = '.idl')
 +#bxpt = Builder(action = 'xpidl -w -m typelib -Icomponents -I' + gecko_idl + ' -e $TARGET $SOURCE', suffix = '.xpt', src_suffix = '.idl')
 +#bhdr = Builder(action = 'xpidl -w -m header -Icomponents -I' + gecko_idl + ' -e $TARGET $SOURCE', suffix = '.h', src_suffix = '.idl')
-+bxpt = Builder(action = 'python2 /usr/lib/xulrunner-devel-9.0/sdk/bin/typelib.py -Icomponents -I' + gecko_idl + ' -o $TARGET $SOURCE', suffix = '.xpt', src_suffix = '.idl')
-+bhdr = Builder(action = 'python2 /usr/lib/xulrunner-devel-9.0/sdk/bin/header.py -Icomponents -I' + gecko_idl + ' -o $TARGET $SOURCE', suffix = '.h', src_suffix = '.idl')
++bxpt = Builder(action = 'python2 /usr/lib/xulrunner-devel-9.0.1/sdk/bin/typelib.py -Icomponents -I' + gecko_idl + ' -o $TARGET $SOURCE', suffix = '.xpt', src_suffix = '.idl')
++bhdr = Builder(action = 'python2 /usr/lib/xulrunner-devel-9.0.1/sdk/bin/header.py -Icomponents -I' + gecko_idl + ' -o $TARGET $SOURCE', suffix = '.h', src_suffix = '.idl')
  
  # Create environment object for build
  env = Environment(
