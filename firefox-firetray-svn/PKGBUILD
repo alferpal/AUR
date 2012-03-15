@@ -11,7 +11,7 @@ arch=('i686' 'x86_64')
 url="http://code.google.com/p/firetray/"
 license=('GPL')
 depends=('firefox')
-makedepends=('xulrunner=10.0.2' 'scons' 'svn' 'unzip')
+makedepends=('xulrunner=11.0' 'scons' 'svn' 'unzip')
 provides=('firefox-firetray')
 conflicts=('firefox-firetray')
 source=('generate_install_rdf.sh.patch'
