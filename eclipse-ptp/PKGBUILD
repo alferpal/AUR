@@ -1,26 +1,28 @@
 #Maintainer: Alex Ferrando <alferpal@gmail.com>
-# Contributor: Archan Paul <arp@archan.org>
 
-pkgname=eclipse-darkjuno
-pkgver=1.0.0.201207121019
+pkgname=eclipse-ptp
+pkgver=7.0.3
 pkgrel=1
-pkgdesc="Dark theme for eclipse juno"
+pkgdesc="Parallel developer tools for Eclipse"
 arch=('i686' 'x86_64')
-url="https://github.com/eclipse-color-theme/eclipse-ui-themes"
+url="http://www.eclipse.org/ptp/"
 license=('EPL')
-depends=('eclipse>=4.2' )
-source=("https://github.com/downloads/eclipse-color-theme/eclipse-ui-themes/com.github.eclipsecolortheme.themes_1.0.0.201207121019.zip")
-
-md5sums=('14d15340bb43f685cf47bc71f72f8cbe')
+depends=('eclipse')
+if [[ "$CARCH" == "i686" ]]; then
+   source=('http://eclipse.ialto.com/tools/ptp/updates/kepler/ptp-linux-gtk-x86-7.0.3.tar.gz')
+   md5sums=('1291bbb87a262e154031ed61fe14cce9')
+elif [[ "$CARCH" == "x86_64" ]]; then
+   source=('http://eclipse.ialto.com/tools/ptp/updates/kepler/ptp-linux-gtk-x86_64-7.0.3.tar.gz')
+   md5sums=('265b7fa5991b71cc5187eb82b2995c2e')
+fi
 
 package() {
   _dest=${pkgdir}/usr/share/eclipse/dropins/${pkgname/eclipse-}/eclipse
 
-  cd ${srcdir}
-  
+  cd ${srcdir}/eclipse
+
   # Features
   find features -type f | while read _feature ; do
-    echo ${_feature}
     if [[ ${_feature} =~ (.*\.jar$) ]] ; then
       install -dm755 ${_dest}/${_feature%*.jar}
       cd ${_dest}/${_feature/.jar}
@@ -35,4 +37,3 @@ package() {
     install -Dm644 ${_plugin} ${_dest}/${_plugin}
   done
 }
-

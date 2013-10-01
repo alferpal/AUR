@@ -2,19 +2,18 @@
 # Contributor: Archan Paul <arp@archan.org>
 
 pkgname=eclipse-egit
-pkgver=3.0.0.201306101825
+pkgver=3.0.3.201309161630
 pkgrel=1
 pkgdesc="An Eclipse Team provider for the Git version control system"
 arch=('i686' 'x86_64')
 url="http://eclipse.org/egit/"
 license=('EPL')
 depends=('eclipse>=3.6' 'eclipse-mylyn>=3.6')
-source=("http://download.eclipse.org/egit/updates-3.0/org.eclipse.egit.repository-3.0.0.201306101825-r.zip")
+source=("http://mirror.netcologne.de/eclipse//egit/updates/org.eclipse.egit.repository-${pkgver}-r.zip")
 
-md5sums=('1144427875f4248fb4394bb9bb24c2ae')
+md5sums=('94ede5fd3b1f42999cac206d20953b73')
 
-
-build() {
+package() {
   _dest=${pkgdir}/usr/share/eclipse/dropins/${pkgname/eclipse-}/eclipse
 
   cd ${srcdir}
