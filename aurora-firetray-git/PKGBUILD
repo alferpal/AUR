@@ -8,7 +8,7 @@ pkgdesc="A firefox (heftig's aurora) system tray extension for linux"
 arch=('i686' 'x86_64')
 url="https://github.com/foudfou/FireTray"
 license=('GPL')
-depends=('firefox>=7')
+depends=('aurora')
 makedepends=('git' 'unzip' 'zip')
 
 source=('git://github.com/foudfou/FireTray.git')
