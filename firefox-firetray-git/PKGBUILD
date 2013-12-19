@@ -30,8 +30,8 @@ build() {
 
 package() {
   cd FireTray/build*
-  mkdir -p "${pkgdir}"/"${_firefox_dir}"/extensions/"${_extension_id}"
-  unzip firetray*.xpi -d "${pkgdir}"/"${_firefox_dir}"/extensions/"${_extension_id}"
+  mkdir -p "${pkgdir}"/"${_firefox_dir}"/browser/extensions/"${_extension_id}"
+  unzip firetray*.xpi -d "${pkgdir}"/"${_firefox_dir}"/browser/extensions/"${_extension_id}"
 }
 
 # vim:set ts=2 sw=2 et:
