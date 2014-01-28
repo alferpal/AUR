@@ -2,9 +2,9 @@
 # Contributor: Zhang Li <richselian at gmail.com>
 
 pkgname=vim-syntastic
-pkgver=3.1.0
-_scriptid=20670
-pkgrel=2
+pkgver=3.3.0
+_scriptid=21329
+pkgrel=1
 pkgdesc="vim automatic syntax checking"
 arch=('any')
 url="http://www.vim.org/scripts/script.php?script_id=2736"
@@ -14,7 +14,7 @@ groups=('vim-plugins')
 install=vimdoc.install
 source=("${pkgname}.zip::http://www.vim.org/scripts/download_script.php?src_id=${_scriptid}")
 
-md5sums=('3000429a1baa0b83211cea1fc5d95a76')
+md5sums=('b6dfa4af91bd431e347e0ad3370f5169')
 
 package() {
     mkdir -p $pkgdir/usr/share/vim/vimfiles/{plugin,doc,autoload/syntastic/,syntax_checkers}
@@ -23,4 +23,5 @@ package() {
     cp doc/syntastic.txt $pkgdir/usr/share/vim/vimfiles/doc/
     cp autoload/syntastic/* $pkgdir/usr/share/vim/vimfiles/autoload/syntastic/
     cp -r syntax_checkers/* $pkgdir/usr/share/vim/vimfiles/syntax_checkers/
+    chmod 755 $pkgdir/usr/share/vim/vimfiles/syntax_checkers
 }
