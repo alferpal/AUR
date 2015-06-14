@@ -1,0 +1,23 @@
+pkgbase = iojs
+	pkgdesc = Evented I/O for V8 JavaScript - Node.js fork
+	pkgver = 2.2.1
+	pkgrel = 1
+	url = http://iojs.org/
+	install = iojs.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = python2
+	makedepends = git
+	depends = openssl
+	depends = zlib
+	optdepends = npm: nodejs package manager
+	provides = nodejs
+	conflicts = nodejs
+	conflicts = iojs-bin
+	options = !emptydirs
+	source = https://iojs.org/dist/v2.2.1/iojs-v2.2.1.tar.gz
+	sha256sums = 55e79cc4f4cde41f03c1e204d2af5ee4b6e4edcf14defc82e518436e939195fa
+
+pkgname = iojs
+
