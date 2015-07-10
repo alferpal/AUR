@@ -3,7 +3,6 @@ pkgbase = iojs
 	pkgver = 2.3.4
 	pkgrel = 2
 	url = http://iojs.org/
-	install = iojs.install
 	arch = i686
 	arch = x86_64
 	license = MIT

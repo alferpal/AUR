@@ -14,7 +14,6 @@ provides=('nodejs' 'npm')
 conflicts=('nodejs' 'iojs-bin' 'npm')
 options=('!emptydirs')
 source=("https://iojs.org/dist/v${pkgver}/iojs-v${pkgver}.tar.gz")
-install=iojs.install
 sha256sums=('18aeb8ad79b549f45caf6e4baa421046a0cd8f60102ac0986f19b19174962cc1')
 
 prepare() {
