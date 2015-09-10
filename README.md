@@ -29,6 +29,6 @@ This preserves an independent history for third-party hosting, pull requests... 
 
 #What I Maintain for now:
 
-[iojs](https://aur.archlinux.org/packages/iojs/)
+...
 
 Any trouble or problem with iany of my packages, you can post a comment at the AUR package's page or send me an e-mail. 
