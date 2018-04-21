@@ -27,7 +27,7 @@ This preserves an independent history for third-party hosting, pull requests... 
 * post-commit
 > Clear aurballs and generate a new, up-to-date aurball for all changed PKGBUILDs.
 
-#What I Maintain for now:
+# What I Maintain for now:
 
 ...
 
